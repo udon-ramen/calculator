@@ -1,0 +1,137 @@
+# -*- coding: utf-8 -*-
+
+Calculator:
+
+<Calculator>
+
+    BoxLayout:
+
+        orientation: "vertical"
+        size: root.size
+
+        Label:
+            id: hyouji
+            text: root.text
+            halign: "right"
+
+
+        BoxLayout:
+
+            Button:
+                id: ButtonAC
+                text: "AC"
+                font_size: 30
+                size_hint: (.75, 1)
+                on_press: root.number_clear()
+
+            Button:
+                id: Button/
+                text: "÷"
+                font_size: 30
+                size_hint: (.25, 1)
+                on_press: root.number_division()
+
+
+        BoxLayout:
+
+            Button:
+                id: Button7
+                text: "7"
+                font_size: 30
+                on_press: root.press_number(self)
+
+            Button:
+                id: Button8
+                text: "8"
+                font_size: 30
+                on_press: root.press_number(self)
+
+            Button:
+                id: Button9
+                text: "9"
+                font_size: 30
+                on_press: root.press_number(self)
+
+            Button:
+                id: Button*
+                text: "×"
+                font_size: 30
+                on_press: root.number_multiplication()
+
+
+        BoxLayout:
+        
+            Button:
+                id: Button4
+                text: "4"
+                font_size: 30
+                on_press: root.press_number(self)
+
+            Button:
+                id: Button5
+                text: "5"
+                font_size: 30
+                on_press: root.press_number(self)
+
+            Button:
+                id: Button6
+                text: "6"
+                font_size: 30
+                on_press: root.press_number(self)
+
+            Button:
+                id: Button+
+                text: "+"
+                font_size: 30
+                on_press: root.number_plus()
+
+
+        BoxLayout:
+        
+            Button:
+                id: Button1
+                text: "1"
+                font_size: 30
+                on_press: root.press_number(self)
+
+            Button:
+                id: Button2
+                text: "2"
+                font_size: 30
+                on_press: root.press_number(self)
+
+            Button:
+                id: Button3
+                text: "3"
+                font_size: 30
+                on_press: root.press_number(self)
+
+            Button:
+                id: Button-
+                text: "-"
+                font_size: 30
+                on_press: root.number_minus()
+
+
+        BoxLayout:
+
+            Button:
+                id: Button1
+                text: "0"
+                font_size: 30
+                on_press: root.press_number(self)
+                size_hint: (.5, 1)
+
+            Button:
+                id: Button2
+                text: "."
+                font_size: 30
+                on_press: root.point(self)
+                size_hint: (.25, 1)
+
+            Button:
+                id: Button3
+                text: "="
+                font_size: 30
+                on_press: root.number_equal()
+                size_hint: (.25, 1)
